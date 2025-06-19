@@ -13,13 +13,13 @@ Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/s/sphinxcontrib-googleanalytics/sphinxcontrib-googleanalytics-%{version}.tar.gz
 # Source0-md5:	a267c20096c4006bef6605e64cb3a4d3
 URL:		https://pypi.org/project/sphinxcontrib-googleanalytics/
-BuildRequires:	python
 %if %{with python2}
+BuildRequires:	python
 BuildRequires:	python-modules
 BuildRequires:	python-setuptools
-BuildRequires:	python3
 %endif
 %if %{with python3}
+BuildRequires:	python3
 BuildRequires:	python3-modules
 BuildRequires:	python3-setuptools
 %endif
