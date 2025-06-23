@@ -4,6 +4,7 @@
 %bcond_without	python3 # CPython 3.x module
 
 Summary:	Sphinx extension googleanalytics
+Summary(pl.UTF-8):	Rozszerzenie Sphinksa googleanalytics
 Name:		python-sphinxcontrib-googleanalytics
 Version:	0.4
 Release:	1
@@ -31,11 +32,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This extensions allows tracking generated html files with Google
+This extensions allows tracking generated HTML files with Google
 Analytics web service.
+
+%description -l pl.UTF-8
+To rozszerzenie pozwala na śledzenie wygenerowanych plików HTML przy
+użyciu usługi WWW Google Analytics.
 
 %package -n python3-sphinxcontrib-googleanalytics
 Summary:	Sphinx extension googleanalytics
+Summary(pl.UTF-8):	Rozszerzenie Sphinksa googleanalytics
 Group:		Libraries/Python
 Requires:	python3-modules
 Requires:	python3-sphinxcontrib
@@ -43,6 +49,10 @@ Requires:	python3-sphinxcontrib
 %description -n python3-sphinxcontrib-googleanalytics
 This extensions allows tracking generated html files with Google
 Analytics web service.
+
+%description -n python3-sphinxcontrib-googleanalytics -l pl.UTF-8
+To rozszerzenie pozwala na śledzenie wygenerowanych plików HTML przy
+użyciu usługi WWW Google Analytics.
 
 %prep
 %setup -q -n sphinxcontrib-googleanalytics-%{version}
